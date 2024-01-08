@@ -4,6 +4,8 @@ import { BadRequestError } from "errors/badRequestError";
 import { ConnectionError } from "errors/connectionError";
 import storage from "utils/storage";
 
+// https://pumppro-server.onrender.com/
+// http://localhost:5001/
 export const api = axios.create({
 	baseURL: "https://pumppro-server.onrender.com/"
 });
