@@ -5,7 +5,7 @@ import { ConnectionError } from "errors/connectionError";
 import storage from "utils/storage";
 
 export const api = axios.create({
-	baseURL: "https://pumppro-server.onrender.com/api"
+	baseURL: "https://pumppro-server.onrender.com/"
 });
 
 const requestInterceptor = (config: AxiosRequestConfig) => {
