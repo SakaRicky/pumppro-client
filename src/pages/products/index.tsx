@@ -208,7 +208,10 @@ const Products = () => {
 								}}
 								onClick={() => setAddProductModal(true)}
 							>
-								Edit Product
+								<FormattedMessage
+									id="edit_product"
+									defaultMessage="Edit Product"
+								/>
 							</Button>
 						) : (
 							<Button
@@ -223,7 +226,10 @@ const Products = () => {
 								}}
 								onClick={() => setAddProductModal(true)}
 							>
-								Add Product
+								<FormattedMessage
+									id="add_product"
+									defaultMessage="Add Product"
+								/>
 							</Button>
 						)}
 						{selectedProductsIDs?.length > 0 && (
@@ -242,7 +248,7 @@ const Products = () => {
 								}}
 							>
 								<FormattedMessage
-									id="products.delete.product"
+									id="delete_product"
 									defaultMessage="Delete Product"
 								/>
 							</LoadingButton>

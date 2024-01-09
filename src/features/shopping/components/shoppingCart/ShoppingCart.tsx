@@ -15,6 +15,7 @@ import { saveSale } from "services/sales";
 import { useNotify } from "hooks/useNotify";
 import ShoppingCartFooter from "./ShoppingCartFooter";
 import { BadRequestError } from "errors/badRequestError";
+import { FormattedMessage } from "react-intl";
 
 const ShoppingCart = () => {
 	const [state, dispatch] = useStateValue();
@@ -68,7 +69,7 @@ const ShoppingCart = () => {
 			}}
 		>
 			<Typography component="h1" textAlign="center" fontSize="2rem" m={2}>
-				ShoppingCart
+				<FormattedMessage id="shopping_cart" defaultMessage="Shopping Cart" />
 			</Typography>
 			<List>
 				{state.cartItems.map(item => {

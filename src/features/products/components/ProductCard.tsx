@@ -130,10 +130,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 						}
 					}}
 				>
-					<FormattedMessage
-						id="product.card.addToCart"
-						defaultMessage="Add To Chart"
-					/>
+					<FormattedMessage id="add_to_cart" defaultMessage="Add To Chart" />
 				</Button>
 			</Box>
 			<Box sx={{ display: "flex", justifyContent: "center" }}>

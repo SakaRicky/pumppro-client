@@ -125,7 +125,7 @@ const SoldItems = ({
 							fontSize: { xs: mobileFontSize, md: "1.5rem" }
 						}}
 					>
-						<FormattedMessage id="total.sold" defaultMessage="Total Sold " />
+						<FormattedMessage id="total_sold" defaultMessage="Total Sold " />
 
 						<Typography
 							sx={{ fontSize: { xs: mobileFontSize, md: "1.5rem" } }}
@@ -174,7 +174,7 @@ const SoldItems = ({
 					fontSize="1.5rem"
 					sx={{ display: "flex", gap: 2, mt: { xs: 2, md: 0 } }}
 				>
-					<FormattedMessage id="total.sold" defaultMessage="Total Sold" />
+					<FormattedMessage id="total_sold" defaultMessage="Total Sold" />
 					{": "}
 					<Typography
 						component="span"

@@ -50,15 +50,12 @@ const ShoppingCartFooter = ({
 			<Box my={1}>
 				<Typography
 					component="span"
-					fontSize="1rem"
+					fontSize="1.5rem"
 					display="flex"
 					gap={2}
 					alignItems="center"
 				>
-					<FormattedMessage
-						id="shopping.cart.amount.given"
-						defaultMessage="Amount Given"
-					/>
+					<FormattedMessage id="amount_given" defaultMessage="Amount Given" />
 					<TextField
 						type="number"
 						size="small"
@@ -76,7 +73,7 @@ const ShoppingCartFooter = ({
 					gap={2}
 					alignItems="center"
 				>
-					<FormattedMessage id="shopping.cart.change" defaultMessage="Change" />
+					<FormattedMessage id="shopping_change" defaultMessage="Change" />
 					<Box
 						sx={{
 							backgroundColor: theme.palette.grey[500],
@@ -108,7 +105,7 @@ const ShoppingCartFooter = ({
 						}
 					}}
 				>
-					<FormattedMessage id="cart.sale" defaultMessage="Save Sale" />
+					<FormattedMessage id="save" defaultMessage="Save Sale" />
 				</LoadingButton>
 			</Box>
 		</Box>

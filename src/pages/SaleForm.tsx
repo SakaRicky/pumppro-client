@@ -88,7 +88,7 @@ const SalesByForm = () => {
 	return (
 		<Box sx={{ p: 2 }}>
 			<Typography fontSize="2rem">
-				<FormattedMessage id="salebyform" defaultMessage="Sales By Form" />
+				<FormattedMessage id="salesform" defaultMessage="Sales By Form" />
 			</Typography>
 			<Box sx={{ my: 2 }}>
 				<Box

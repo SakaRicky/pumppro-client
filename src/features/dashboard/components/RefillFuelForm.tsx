@@ -154,8 +154,8 @@ export const RefillFuelForm = ({ fuels, fetchFuels }: UpdateFuelFormProps) => {
 										}}
 									>
 										<FormattedMessage
-											id="refillFuel"
-											defaultMessage="Refill Fuel"
+											id="load_fuel"
+											defaultMessage="Load Fuel"
 										/>
 									</LoadingButton>
 								</Box>

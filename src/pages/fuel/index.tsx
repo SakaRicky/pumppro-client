@@ -148,9 +148,17 @@ const Fuels = () => {
 				}}
 			>
 				<Typography variant="h2" p={1} textAlign="center">
-					Update Fuel States
+					<FormattedMessage
+						id="fuel_state"
+						defaultMessage="Update Fuel States"
+					/>
 				</Typography>
-				<Typography>Enter only the amount delivered</Typography>
+				<Typography>
+					<FormattedMessage
+						id="amount_deleivered"
+						defaultMessage="Amount delivered"
+					/>
+				</Typography>
 				<Box m="1rem 0">
 					{fuels && <RefillFuelForm fuels={fuels} fetchFuels={refetchFuels} />}
 				</Box>
@@ -172,7 +180,7 @@ const Fuels = () => {
 								}}
 								onClick={() => setAddFuelModal(true)}
 							>
-								Edit Fuel
+								<FormattedMessage id="edit_fuel" defaultMessage="Edit Fuel" />
 							</Button>
 						) : (
 							<Button
@@ -187,7 +195,7 @@ const Fuels = () => {
 								}}
 								onClick={() => setAddFuelModal(true)}
 							>
-								Add Fuel
+								<FormattedMessage id="add_fuel" defaultMessage="Add Fuel" />
 							</Button>
 						)}
 						{selectedFuelIDs?.length > 0 && (
@@ -206,7 +214,7 @@ const Fuels = () => {
 								}}
 							>
 								<FormattedMessage
-									id="products.delete.fuel"
+									id="delete_fuel"
 									defaultMessage="Delete Fuel"
 								/>
 							</LoadingButton>

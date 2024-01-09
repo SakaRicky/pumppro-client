@@ -7,7 +7,7 @@ import storage from "utils/storage";
 // https://pumppro-server.onrender.com/
 // http://localhost:5001/
 export const api = axios.create({
-	baseURL: "https://pumppro-server.onrender.com/"
+	baseURL: "http://localhost:5001/"
 });
 
 const requestInterceptor = (config: AxiosRequestConfig) => {
